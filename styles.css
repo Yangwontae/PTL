@@ -19,9 +19,12 @@ header.nav .wrap{max-width:none;padding:0 48px;display:flex;align-items:center;j
 .brand b{font-family:"Nanum Gothic",sans-serif;font-size:21px;font-weight:800;color:var(--accent)}
 .brand-dept{display:block;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:2px}
 nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
-nav a{color:var(--ink);text-decoration:none;font-size:15.5px;font-weight:500;padding:26px 0;border-bottom:2px solid transparent}
-nav a:hover{color:var(--accent);border-bottom-color:var(--accent)}
-nav a.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:700}
+nav a{position:relative;display:block;color:var(--ink);text-decoration:none;font-size:15.5px;font-weight:500;line-height:28px;padding:24px 0;transition:color .2s ease,-webkit-text-stroke-color .2s ease}
+/* 메뉴 hover: 글씨가 진해지고, 밑줄이 가운데서 양옆으로 펼쳐짐 */
+nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:center;transition:transform .28s cubic-bezier(.2,.7,.2,1)}
+nav a:hover{color:var(--accent);-webkit-text-stroke:.45px currentColor}
+nav a:hover::after,nav a:focus-visible::after,nav a.active::after{transform:scaleX(1)}
+nav a.active{color:var(--accent);font-weight:700}
 
 /* Hero (home page) */
 .hero{background:linear-gradient(120deg,#ffffff 0%,#f2f3f4 55%,#e6e8e9 100%);padding:56px 0 72px;border-bottom:1px solid var(--line)}
@@ -30,7 +33,10 @@ nav a.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:7
 .hero h1{font-family:"Nanum Gothic",sans-serif;font-size:50px;line-height:1.3;margin:14px 0 22px;color:var(--ink);word-break:keep-all}
 .hero p{font-size:17.5px;color:var(--muted);margin:0;max-width:680px}
 .btns{display:flex;gap:12px;margin-top:32px}
-.btn{display:inline-block;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:500;font-size:15px}
+.btn{display:inline-block;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:500;font-size:15px;transition:transform .18s ease,box-shadow .18s ease,background-color .18s ease}
+/* 버튼 hover: 살짝 떠오르며 그림자 */
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);box-shadow:0 6px 16px rgba(4,30,66,.18),0 2px 4px rgba(4,30,66,.08)}
+.btn:active{transform:translateY(0);box-shadow:0 2px 6px rgba(4,30,66,.14)}
 .btn.primary{background:var(--accent);color:#fff}
 .btn.primary:hover{background:var(--accent-dark)}
 .btn.ghost{border:1px solid var(--accent);color:var(--accent);background:#fff}
@@ -84,8 +90,8 @@ h2{font-family:"Nanum Gothic",sans-serif;font-size:34px;margin:0}
 
 /* Research panels (accordion) */
 .rpanels{display:flex;flex-direction:column;gap:16px}
-.rpanel{background:var(--surface);border:1px solid var(--line);border-radius:16px;transition:box-shadow .2s,border-color .2s}
-.rpanel:hover{box-shadow:0 10px 28px rgba(0,0,0,.07)}
+.rpanel{background:var(--surface);border:1px solid var(--line);border-radius:16px;transition:box-shadow .2s ease,border-color .2s ease,transform .2s ease}
+.rpanel:not([open]):hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(4,30,66,.14),0 3px 6px rgba(4,30,66,.06)}
 .rpanel[open]{border-color:var(--accent);box-shadow:0 14px 34px rgba(4,30,66,.10)}
 .rpanel summary{display:flex;align-items:flex-start;gap:24px;padding:28px 32px;cursor:pointer;list-style:none}
 .rpanel summary::-webkit-details-marker{display:none}
@@ -135,10 +141,14 @@ h2{font-family:"Nanum Gothic",sans-serif;font-size:34px;margin:0}
 
 /* Achievements tabs */
 .tabs{display:flex;gap:8px;border-bottom:2px solid var(--line);margin-bottom:36px}
-.tab{background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-2px;padding:14px 28px;font:inherit;font-size:18px;color:var(--muted);cursor:pointer}
-.tab span{display:inline-block;min-width:26px;margin-left:6px;padding:0 8px;border-radius:999px;background:var(--bg-alt);font-size:13px;color:var(--muted)}
-.tab:hover{color:var(--accent)}
-.tab.on{color:var(--accent);border-bottom-color:var(--accent);font-weight:800}
+.tab{position:relative;background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-2px;padding:14px 28px;font:inherit;font-size:18px;color:var(--muted);cursor:pointer;transition:color .2s ease,-webkit-text-stroke-color .2s ease}
+/* 탭 hover: 상단 메뉴처럼 글씨가 진해지고 밑줄이 가운데서 펼쳐짐 */
+.tab::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:3px;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:center;transition:transform .28s cubic-bezier(.2,.7,.2,1)}
+.tab:hover::after,.tab:focus-visible::after,.tab.on::after{transform:scaleX(1)}
+.tab span{display:inline-block;min-width:26px;margin-left:6px;padding:0 8px;border-radius:999px;background:var(--bg-alt);font-size:13px;color:var(--muted);transition:background-color .2s ease,color .2s ease}
+.tab:hover{color:var(--accent);-webkit-text-stroke:.45px currentColor}
+.tab:hover span{-webkit-text-stroke:0}
+.tab.on{color:var(--accent);font-weight:800;-webkit-text-stroke:0}
 .tab.on span{background:var(--accent);color:#fff}
 .tab-note{margin:0 0 28px;font-size:14px;color:var(--muted)}
 
