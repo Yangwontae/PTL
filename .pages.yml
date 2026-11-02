@@ -6,6 +6,48 @@ media:
   output: /images
 
 content:
+  - name: home
+    label: 메인 화면
+    type: file
+    path: data/home.json
+    format: json
+    fields:
+      - name: eyebrow
+        label: 상단 작은 문구 (영문)
+        type: string
+      - name: title
+        label: 큰 제목
+        description: 줄을 바꾸면 화면에서도 그 위치에서 줄이 바뀝니다.
+        type: text
+      - name: intro
+        label: 소개 문장
+        description: 줄을 바꾸면 화면에서도 그 위치에서 줄이 바뀝니다.
+        type: text
+      - name: keywords
+        label: 연구 키워드
+        type: string
+        list: true
+      - name: areas
+        label: 연구 분야 수
+        description: 키워드 상자 아래 숫자에 표시됩니다. 논문·특허 수는 자동으로 셉니다.
+        type: number
+      - name: cards
+        label: 바로가기 카드 설명
+        type: object
+        fields:
+          - name: about
+            label: 교수 소개
+            type: string
+          - name: research
+            label: 연구 분야
+            type: string
+          - name: achievements
+            label: 연구 성과
+            type: string
+          - name: teaching
+            label: 강의 · 상담
+            type: string
+
   - name: papers
     label: 연구 성과 · 논문
     type: file

@@ -7,6 +7,7 @@
 1. https://app.pagescms.org 에 접속해 깃허브 계정으로 로그인합니다.
 2. 이 저장소를 선택합니다. 처음 한 번은 저장소 주인 계정으로 Pages CMS 깃허브 앱을 설치해야 합니다.
 3. 왼쪽 메뉴에서 수정할 항목을 고릅니다.
+   - 메인 화면 (제목, 소개 문장, 키워드, 바로가기 설명)
    - 연구 성과 · 논문 / 특허 / 연구과제
    - 강의 · 담당 과목 / 면담 안내
 4. 내용을 고치거나 **Add an entry**로 새 항목을 추가하고 **Save**를 누릅니다.
@@ -16,10 +17,10 @@
 
 | 파일 | 내용 |
 |---|---|
-| `data/*.json` | 논문, 특허, 과제, 강의, 면담 안내 데이터 (Pages CMS가 수정) |
+| `data/*.json` | 메인 화면, 논문, 특허, 과제, 강의, 면담 안내 데이터 (Pages CMS가 수정) |
 | `.pages.yml` | Pages CMS 입력 화면 설정 |
 | `*.html`, `styles.css` | 페이지 구조와 디자인 |
-| `site-data.js`, `achievements.js`, `teaching.js` | 데이터를 읽어 화면에 그리는 스크립트 |
+| `site-data.js`, `home.js`, `achievements.js`, `teaching.js` | 데이터를 읽어 화면에 그리는 스크립트 |
 | `images/` | 이미지 (`research/` 연구 분야 사진: `01-1.jpg` ~ `04-3.jpg` 이름으로 넣으면 표시) |
 
 ## 내 컴퓨터에서 미리보기
