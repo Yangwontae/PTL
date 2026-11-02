@@ -3,18 +3,18 @@
   "title": "농생명 유전자원 활용 연구로 지속가능한 바이오산업의 미래를 엽니다",
   "intro": "양원태 교수는 벼의 인산·철 흡수와 생장·발달을 조절하는 유전자를 발굴하고,\n형질전환 작물을 활용한 기능성 소재를 연구합니다.",
   "keywords": [
-    "Rice",
-    "Phosphate homeostasis",
-    "MYB transcription factor",
+    "Plant Physiology",
+    "Nutrient homeostasis",
+    "Transcription factor",
     "Plant development",
     "Abiotic stress",
-    "형질전환 작물",
-    "기능성 소재"
+    "Gene Expression Mechanisms",
+    "형질도입 작물"
   ],
   "areas": 4,
   "cards": {
     "about": "학력, 경력, 수상 이력을 소개합니다.",
-    "research": "벼 인산 항상성, 생장·스트레스 반응 등 주요 연구 주제입니다.",
+    "research": "식물 생리, 생장, 스트레스 반응, 유전자 발현 조절 기작 연구 등 주요 연구 주제입니다.",
     "achievements": "발표 논문, 등록 특허, 연구과제를 확인하세요.",
     "teaching": "담당 강의와 학생 면담 안내입니다."
   }
