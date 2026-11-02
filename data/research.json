@@ -89,6 +89,12 @@
     "title": "형질전환 작물  및 천연물 기반 기능성 소재 개발",
     "title_en": "Functional materials from transgenic crops and natural products",
     "summary": "형질전환 작물과 천연물을 이용해 건강 기능성, 화장품 등 바이오 소재 개발 및 효능 평가을 평가합니다.",
+    "photos": [
+      {
+        "image": "/images/당뇨 식이.jpg",
+        "caption": "당뇨 개선용 형질전환 벼의 효능 검정"
+      }
+    ],
     "topics": [
       "거미줄 단백질(피브로인)을 생산하는 형질전환 벼 개발",
       "피브로인 함유 형질전환 벼의 당뇨·고지혈증·지방간 개선 효과 평가",
