@@ -142,6 +142,33 @@ content:
             label: 내용
             type: text
 
+  - name: footer
+    label: 꼬리말 (모든 페이지 하단)
+    type: file
+    path: data/footer.json
+    format: json
+    fields:
+      - name: title
+        label: 제목
+        type: string
+      - name: address
+        label: 주소
+        type: string
+      - name: map
+        label: 지도 검색어
+        description: 주소 옆 "지도" 링크를 누르면 카카오맵에서 이 단어로 검색합니다. 비우면 링크가 사라집니다.
+        type: string
+      - name: office
+        label: 교수연구실 호실
+        description: "예: 공대1호관 501호"
+        type: string
+      - name: email
+        label: 이메일
+        type: string
+      - name: phone
+        label: 전화번호
+        type: string
+
   - name: papers
     label: 연구 성과 · 논문
     type: file

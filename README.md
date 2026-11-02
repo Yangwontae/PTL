@@ -10,6 +10,7 @@
    - 메인 화면 (제목, 소개 문장, 키워드, 바로가기 설명)
    - 교수 소개 (사진, 전공, 학력, 경력, 수상)
    - 연구 분야 (분야별 요약, 사진, 연구 내용, 관련 성과)
+   - 꼬리말 (모든 페이지 하단의 주소, 연구실, 이메일, 전화번호)
    - 연구 성과 · 논문 / 특허 / 연구과제
    - 강의 · 담당 과목 / 면담 안내
 4. 내용을 고치거나 **Add an entry**로 새 항목을 추가하고 **Save**를 누릅니다.
@@ -19,10 +20,10 @@
 
 | 파일 | 내용 |
 |---|---|
-| `data/*.json` | 메인 화면, 교수 소개, 연구 분야, 논문, 특허, 과제, 강의, 면담 안내 데이터 (Pages CMS가 수정) |
+| `data/*.json` | 메인 화면, 교수 소개, 연구 분야, 꼬리말, 논문, 특허, 과제, 강의, 면담 안내 데이터 (Pages CMS가 수정) |
 | `.pages.yml` | Pages CMS 입력 화면 설정 |
 | `*.html`, `styles.css` | 페이지 구조와 디자인 |
-| `site-data.js`, `home.js`, `about.js`, `research.js`, `achievements.js`, `teaching.js` | 데이터를 읽어 화면에 그리는 스크립트 |
+| `site-data.js`, `footer.js`, `home.js`, `about.js`, `research.js`, `achievements.js`, `teaching.js` | 데이터를 읽어 화면에 그리는 스크립트 |
 | `images/` | 이미지 (CMS에서 올린 사진도 여기에 저장됨) |
 
 ## 내 컴퓨터에서 미리보기
