@@ -48,6 +48,100 @@ content:
             label: 강의 · 상담
             type: string
 
+  - name: about
+    label: 교수 소개
+    type: file
+    path: data/about.json
+    format: json
+    fields:
+      - name: photo
+        label: 사진
+        description: 세로 3:4 비율 사진이 가장 잘 맞습니다.
+        type: image
+      - name: name
+        label: 이름
+        type: string
+      - name: name_en
+        label: 영문 이름
+        type: string
+      - name: affiliation
+        label: 소속
+        type: string
+      - name: major
+        label: 전공
+        type: string
+      - name: position
+        label: 직위
+        type: string
+      - name: position_note
+        label: 직위 옆 설명
+        type: string
+      - name: education
+        label: 학력
+        description: 한 줄에 하나씩 추가하세요. 예) 2010 경상대학교 응용생명과학부 박사
+        type: string
+        list: true
+      - name: career
+        label: 경력
+        description: 한 줄에 하나씩 추가하세요.
+        type: string
+        list: true
+      - name: awards
+        label: 수상
+        description: 한 줄에 하나씩 추가하세요.
+        type: string
+        list: true
+
+  - name: research
+    label: 연구 분야
+    type: file
+    path: data/research.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: 분야명
+        description: 번호(01, 02…)는 순서대로 자동으로 붙습니다.
+        type: string
+        required: true
+      - name: title_en
+        label: 영문 분야명
+        type: string
+      - name: summary
+        label: 한 줄 요약
+        type: text
+      - name: photos
+        label: 사진
+        description: 최대 3장 정도가 보기 좋습니다.
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: 사진
+            type: image
+          - name: caption
+            label: 사진 설명
+            type: string
+      - name: topics
+        label: 주요 연구 내용
+        type: string
+        list: true
+      - name: refs
+        label: 관련 성과
+        type: object
+        list: true
+        fields:
+          - name: type
+            label: 구분
+            type: select
+            options:
+              values:
+                - 논문
+                - 특허
+          - name: text
+            label: 내용
+            type: text
+
   - name: papers
     label: 연구 성과 · 논문
     type: file

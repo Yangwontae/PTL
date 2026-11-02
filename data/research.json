@@ -1,0 +1,72 @@
+[
+  {
+    "title": "벼 인산 흡수 및 항상성 조절 유전자",
+    "title_en": "Phosphate acquisition and homeostasis in rice",
+    "summary": "인산 결핍 조건에서 벼의 인산 흡수와 체내 항상성을 조절하는 전사인자와 운반체 유전자를 발굴하고 기능을 규명합니다.",
+    "photos": [],
+    "topics": [
+      "R2R3-MYB 전사인자(OsMYB4P, OsMYB5P, OsMYB58)의 인산 흡수 조절 기능 규명",
+      "MYB-CC 전사인자 PHL7의 인산 항상성 및 염 스트레스 내성 기능 분석",
+      "인산 운반체(OsPT2, OgPT) 유전자 발굴과 형질전환 식물 개발",
+      "근권 미생물(Burkholderia pyrrocinia) 유래 PAP9 유전자를 이용한 식물 인산 이용 효율 향상"
+    ],
+    "refs": [
+      { "type": "논문", "text": "Overexpression of OsMYB4P, an R2R3-type MYB transcriptional activator, increases phosphate acquisition in rice (2014)" },
+      { "type": "논문", "text": "Rice OsMYB5P improves plant phosphate acquisition by regulation of phosphate transporter (2018)" },
+      { "type": "논문", "text": "OsMYB58 Negatively Regulates Plant Growth and Development by Regulating Phosphate Homeostasis (2024)" },
+      { "type": "특허", "text": "식물의 인산 흡수 효율을 증진시키는 OsMYB4P · OsMYB5P · OsMYB9 · OgPT · PAP9 유전자 (2015–2021)" }
+    ]
+  },
+  {
+    "title": "벼 생장 및 발달 조절 유전자",
+    "title_en": "Genetic regulation of rice growth and development",
+    "summary": "벼의 키, 잎 모양 등 식물 형태와 수량에 영향을 주는 돌연변이체를 분석하고 원인 유전자를 찾습니다.",
+    "photos": [],
+    "topics": [
+      "왜성·좁은잎 돌연변이체(dnl-4)의 특성 분석",
+      "지베렐린 생합성에 관여하는 ARPC2 소단위체 유전자(GASD) 규명과 수량 영향 평가",
+      "잎 발달 관련 유전자 발굴",
+      "유색미(흑자색·적색 과피) 유전자원의 SSR 마커 기반 유전 다양성 평가"
+    ],
+    "refs": [
+      { "type": "논문", "text": "Gibberellic acid sensitive dwarf encodes an ARPC2 subunit that mediates gibberellic acid biosynthesis, effects to grain yield in rice (2022)" },
+      { "type": "논문", "text": "Characterization of dwarf and narrow leaf (dnl-4) mutant in rice (2021)" },
+      { "type": "논문", "text": "Assessment of the genetic diversity of rice germplasms characterized by black-purple and red pericarp color using simple sequence repeat markers (2019)" },
+      { "type": "특허", "text": "벼 유래의 잎 발달 관련 유전자 및 이의 용도 (2015)" }
+    ]
+  },
+  {
+    "title": "환경 스트레스 내성 및 미량원소 이용 효율",
+    "title_en": "Abiotic stress tolerance and micronutrient use efficiency",
+    "summary": "고온·염 등 환경 스트레스와 철 결핍에 대응하는 유전자를 발굴해 기후변화에 강한 작물 개발의 기반을 마련합니다.",
+    "photos": [],
+    "topics": [
+      "수잉기 고온 내성 관련 신규 유전자(OsBHT) 발굴",
+      "인산 항상성 유전자와 염 스트레스 내성의 연관 분석",
+      "벼 유래 OsIT, 호박벌 유래 페리틴 유전자를 이용한 식물 철 흡수·이용 효율 향상"
+    ],
+    "refs": [
+      { "type": "논문", "text": "Identification of a novel gene, osbht, in response to high temperature tolerance at booting stage in rice (2020)" },
+      { "type": "논문", "text": "The MYB-CC Transcription Factor PHOSPHATE STARVATION RESPONSE-LIKE 7 (PHL7) Functions in Phosphate Homeostasis and Affects Salt Stress Tolerance in Rice (2024)" },
+      { "type": "특허", "text": "식물의 철 이용 능력을 향상시키는 벼 유래 OsIT 유전자 및 이의 용도 (2016)" },
+      { "type": "특허", "text": "식물의 철 흡수 효율을 증진시키는 호박벌 유래 페리틴 유전자 및 이의 용도 (2020)" }
+    ]
+  },
+  {
+    "title": "형질전환 작물 기반 기능성 소재",
+    "title_en": "Functional materials from transgenic crops and natural products",
+    "summary": "형질전환 벼와 천연물을 이용해 건강 기능성 소재를 개발하고 효능을 평가합니다.",
+    "photos": [],
+    "topics": [
+      "거미줄 단백질(피브로인)을 생산하는 형질전환 벼 개발",
+      "피브로인 함유 형질전환 벼의 당뇨·고지혈증·지방간 개선 효과 평가",
+      "콩 이소플라본 추출 최적화와 항산화·소화효소 저해 활성 분석",
+      "육종용(Cistanche deserticola) 추출물의 미백·주름 개선 효과"
+    ],
+    "refs": [
+      { "type": "논문", "text": "Spider silk fibroin protein heterologously produced in rice seeds reduce diabetes and hypercholesterolemia in mice (2020)" },
+      { "type": "논문", "text": "Comparative analysis of isoflavone aglycones using microwave-assisted acid hydrolysis from soybean organs at different growth times and screening for their digestive enzyme inhibition and antioxidant properties (2020)" },
+      { "type": "논문", "text": "Whitening and anti-aging effects of Cistanche deserticola extract (2016)" }
+    ]
+  }
+]

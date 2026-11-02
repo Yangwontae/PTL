@@ -32,7 +32,7 @@
 <main>
 <section>
   <div class="wrap">
-    <div class="rpanels">
+    <div class="rpanels" id="research-panels">
       <details class="rpanel" name="research">
         <summary>
           <span class="num">01</span>
@@ -193,16 +193,7 @@
     <div class="foot-copy">© Won-Tae Yang, Dong-A University</div>
   </div>
 </footer>
-<script>
-// 아직 올리지 않은 사진(images/research/01-1.jpg 등)은 자리째 숨김
-document.querySelectorAll(".rphotos img").forEach(function(img){
-  function hide(){ var f = img.closest("figure"), box = f.parentNode; f.remove(); if (!box.querySelector("figure")) box.remove(); }
-  if (img.complete && !img.naturalWidth) hide(); else img.addEventListener("error", hide);
-});
-// name 속성을 지원하지 않는 브라우저용: 하나를 열면 나머지는 닫힘
-document.querySelectorAll(".rpanel").forEach(function(d, _, all){
-  d.addEventListener("toggle", function(){ if (d.open) all.forEach(function(o){ if (o !== d) o.open = false; }); });
-});
-</script>
+<script src="site-data.js"></script>
+<script src="research.js"></script>
 </body>
 </html>
